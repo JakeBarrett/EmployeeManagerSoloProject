@@ -102,11 +102,11 @@ let saveButtonFunction=(browser,selectors,data) => {
     .waitForElementVisible(selectors.employeeList, 3000)
     .click(selectors.employee2)
     .clearValue(selectors.nameEntry)
-    .setValue(selectors.nameEntry, data.Employee1.name)
+    .setValue(selectors.nameEntry, data.Employee2.newName)
     .click(selectors.saveButton)
     .click(selectors.employee1)
     .click(selectors.employee2)
-    .verify.value(selectors.nameEntry,data.Employee1.name)
+    .verify.value(selectors.nameEntry,data.Employee2.newName)
 }
 
 let cancelButtonFunction = (browser,selectors,data) => {
@@ -139,11 +139,27 @@ let deleteEmployeeFunction = (browser,selectors,data) => {
     .acceptAlert()
     .click(selectors.employee1)
     .waitForElementVisible(selectors.employeeCardName,3000)
-    .pause(3000)
+    .pause(100)
     .useXpath()
     .verify.elementNotPresent('//li[contains(.,"Jake Barrett")]')
     .useCss()
 
+}
+
+let searchBarFunction = (browser,selectors,data) => {
+    browser
+    .waitForElementVisible(selectors.employeeList, 2000)
+    .waitForElementVisible(selectors.searchBox,2000)
+    .setValue(selectors.searchBox,data.berniceOrtiz.firstName)
+    .useXpath()
+    .verify.visible(selectors.berniceOrtiz)
+    .verify.elementNotPresent(selectors.elonMusk)
+    .useCss()
+    .click(selectors.clearSearch)
+    .verify.elementPresent(selectors.employeeList)
+    .useXpath()
+    .verify.elementPresent(selectors.elonMusk)
+    .useCss()
 }
 
 module.exports = {
@@ -154,8 +170,6 @@ module.exports = {
     saveButtonFunction : saveButtonFunction,
     cancelButtonFunction : cancelButtonFunction,
     deleteEmployeeFunction : deleteEmployeeFunction,
-
-
-     
+    searchBarFunction : searchBarFunction,
 
 }

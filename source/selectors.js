@@ -19,13 +19,18 @@ module.exports = {
         titleEntry: 'input[name="titleEntry"]',
         saveButton: 'button[name="save"]',
         newEmployee: '//ul/li[contains(.,"New Employee")]',
+        berniceOrtiz : '//ul/li[contains(.,"Bernice Ortiz")]',
+        elonMusk : '//ul/li[contains(.,"Elon Musk")]',
         errorMessage: 'span[class="errorMessage"]',
         nameError: '//span/div[contains(.,"The name field must be between 1 and 30 characters long.")]',
         phoneError: '//span/div[contains(.,"The phone number must be 10 digits long. ")]',
         titleError: '//span/div[contains(.,"The title field must be between 1 and 30 characters long.")]',
         emailError: '//span/div[contains(.,"The email field must contain a valid email address.")]',
         cancelButton: 'button[name="cancel"]',
-        deleteButton: 'button[name="delete"]'
+        deleteButton: 'button[name="delete"]',
+        clearSearch: 'button[name="clearSearch"]',
+        
+        
 
         
     }

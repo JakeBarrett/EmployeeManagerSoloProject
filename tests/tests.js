@@ -7,14 +7,13 @@ module.exports = {
 
     beforeEach : browser => {
         browser.url('https://devmountain-qa.github.io/employee-manager-v2/build/index.html')
-    },
+        },
 
         after: browser => {
-
         browser.end()
         },
 
-
+/*
 "JAKE-56 Employee List" : browser => {functions.employeeListFunction(browser,selectors,data.page)},
 
 "JAKE-57 Add Employee" : browser => {functions.addEmployeeFunction(browser,selectors,data.Employee1)},
@@ -28,6 +27,10 @@ module.exports = {
 "JAKE-60 Save Button" : browser => { functions.saveButtonFunction(browser,selectors,data)},
 
 "JAKE-61 Cancel Button" : browser => {functions.cancelButtonFunction(browser,selectors,data)},
+*/
+"JAKE-63 Search Bar" : browser => {functions.searchBarFunction(browser,selectors,data)}
+
+
 
 
 

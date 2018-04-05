@@ -16,7 +16,8 @@ module.exports = {
     },
 
     Employee2 : {
-        name : "Elon Musk",
+        name : "Elon M",
+        newName : "Elon Musk",
         phone : "5005551234",
         email : "emusk@tesla.com",
         title : "Space Man",
@@ -34,6 +35,7 @@ module.exports = {
 
     berniceOrtiz : {
         name: "Bernice Ortiz",
+        firstName: "Bernice",
         phone: "1234567890",
         email: "b.ortiz@yourcompany.com",
         title: "CEO",
