@@ -3,7 +3,6 @@ module.exports = {
     page : {
         title : "Employee Manager",
         noEmployee : "No Employee Selected"
-
     },
 
     Employee1 : {
@@ -12,7 +11,6 @@ module.exports = {
         phone: "3039210761",
         email : "jbarrett92@gmail.com",
         title: "QA Engineer",
-
     },
 
     Employee2 : {
@@ -40,6 +38,6 @@ module.exports = {
         email: "b.ortiz@yourcompany.com",
         title: "CEO",
 
-    }
+    },
 
 }
