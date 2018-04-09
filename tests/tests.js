@@ -15,7 +15,7 @@ module.exports = {
         },
 
 
-"JAKE-56 Employee List" : browser => {functions.employeeListFunction(browser,selectors,data.page)},
+"JAKE-56 Employee List Test" : browser => {functions.employeeListFunction(browser,selectors,data.page)},
 
 "JAKE-57 Add Employee" : browser => {functions.addEmployeeFunction(browser,selectors,data.Employee1)},
 
