@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "de4b5262-7957-426c-96ad-8be45a6a25d0",
+		"name": "Solo Project API Tests",
+		"description": "Collection includes the API testing for Employee Manager.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tests",
+			"description": null,
+			"item": [
+				{
+					"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+							"protocol": "https",
+							"host": [
+								"peaceful-inlet-88854",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						},
+						"description": "JAKE-64"
+					},
+					"response": []
+				},
+				{
+					"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"id\": \"1111\", \"name\": \"Neil Tyson\", \"phone\": \"3038081234\", \"email\": \"NTyson@cosmos.com\", \"title\": \"Space Man\" }"
+						},
+						"url": {
+							"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees",
+							"protocol": "https",
+							"host": [
+								"peaceful-inlet-88854",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						},
+						"description": "JAKE-65"
+					},
+					"response": []
+				},
+				{
+					"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees/1111",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"id\": \"1111\", \"name\": \"Neil Tyson\", \"phone\": \"3038081234\", \"email\": \"NTyson@cosmos.com\", \"title\": \"Space Man\" }"
+						},
+						"url": {
+							"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/1111?id=1111&name=Neil DeGrasse Tyson&phone=1234321234&email=neiltyson@cosmos.com&title=Host of Cosmos",
+							"protocol": "https",
+							"host": [
+								"peaceful-inlet-88854",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1111"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1111"
+								},
+								{
+									"key": "name",
+									"value": "Neil DeGrasse Tyson"
+								},
+								{
+									"key": "phone",
+									"value": "1234321234"
+								},
+								{
+									"key": "email",
+									"value": "neiltyson@cosmos.com"
+								},
+								{
+									"key": "title",
+									"value": "Host of Cosmos"
+								}
+							]
+						},
+						"description": "JAKE-66"
+					},
+					"response": []
+				},
+				{
+					"name": "https://peaceful-inlet-88854.herokuapp.com/api/employees/1111",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://peaceful-inlet-88854.herokuapp.com/api/employees/1111",
+							"protocol": "https",
+							"host": [
+								"peaceful-inlet-88854",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"employees",
+								"1111"
+							]
+						},
+						"description": "JAKE-67"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
