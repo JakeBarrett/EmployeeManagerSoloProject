@@ -20,7 +20,7 @@ let employeeListFunction = (browser,data) => {
 
 }
 
-let addEmployeeFunction =(browser,selectors,data) => {
+let addEmployeeFunction =(browser,data) => {
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 2000)
@@ -44,7 +44,7 @@ let addEmployeeFunction =(browser,selectors,data) => {
 
 }
 
-let editEmployeeValidFunction =(browser,selectors,data) => {
+let editEmployeeValidFunction =(browser,data) => {
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 2000)
@@ -66,7 +66,7 @@ let editEmployeeValidFunction =(browser,selectors,data) => {
     
 }
 
-let editEmployeeInvalidFunction = (browser,selectors,data)=>{
+let editEmployeeInvalidFunction = (browser,data)=>{
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 3000)
@@ -97,7 +97,7 @@ let editEmployeeInvalidFunction = (browser,selectors,data)=>{
     
 }
 
-let saveButtonFunction=(browser,selectors,data) => {
+let saveButtonFunction=(browser,data) => {
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 3000)
@@ -110,7 +110,7 @@ let saveButtonFunction=(browser,selectors,data) => {
     .verify.value('@nameEntry',data.Employee2.newName)
 }
 
-let cancelButtonFunction = (browser,selectors,data) => {
+let cancelButtonFunction = (browser,data) => {
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 3000)
@@ -130,7 +130,7 @@ let cancelButtonFunction = (browser,selectors,data) => {
     .verify.value('@titleEntry',data.berniceOrtiz.title)
 }
 
-let deleteEmployeeFunction = (browser,selectors,data) => {
+let deleteEmployeeFunction = (browser,data) => {
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 2000)
@@ -147,7 +147,7 @@ let deleteEmployeeFunction = (browser,selectors,data) => {
 
 }
 
-let searchBarFunction = (browser,selectors,data) => {
+let searchBarFunction = (browser,data) => {
     let employeePage = browser.page.employeePage()
     employeePage
     .waitForElementVisible('@employeeList', 2000)
